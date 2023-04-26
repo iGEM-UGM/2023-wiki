@@ -4,7 +4,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <div className="w-screen overflow-hidden relative bg-primary-200 h-full">
+      <div className="w-screen overflow-hidden relative bg-primary-200 h-full z-[100]">
         <div className="flex flex-col items-center relative lg:flex-row lg:px-8 lg:items-start justify-center pt-20">
           <div className=" flex flex-row justify-center gap-x-12 lg:flex-col gap-y-6 lg:pr-8">
             <Image src="/assets/logo_ugm.png" alt="" width={100} height={100} />

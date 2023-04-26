@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { debounce } from "./utilities";
-import ProgressBar from "react-scroll-progress-bar";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -40,32 +40,34 @@ const Navbar = () => {
   return (
     <>
       <div
-        style={{ ...navbarStyles, top: visible ? "0" : "-60px" }}
-        className="shadow-black shadow-lg">
-        <div className="flex flex-row relative justify-between px-5 items-center overflow-hidden translate-y-[-50%] top-[50%] -z-50">
-          <Image
-            src="/assets/logo_short.png"
-            width={100}
-            height={100}
-            alt=""
-            className="block lg:hidden my-auto"
-          />
-          <Image
-            src="/assets/logo.png"
-            width={300}
-            height={300}
-            alt=""
-            className="my-auto lg:block hidden"
-          />
-          <div className="lg:flex flex-row justify-center gap-x-5 text-primary-100 relative text-xl hidden">
-            <p>Home</p>
+        style={{ ...navbarStyles, top: visible ? "0" : "-120px" }}
+        className="shadow-black shadow-lg z-50">
+        <div className="flex flex-row relative justify-between px-5 items-center overflow-hidden translate-y-[-50%] top-[50%] z-50 h-screen">
+          <Link href="/">
+            <Image
+              src="/assets/logo_short.png"
+              width={100}
+              height={100}
+              alt=""
+              className="block lg:hidden my-auto"
+            />
+            <Image
+              src="/assets/logo.png"
+              width={300}
+              height={300}
+              alt=""
+              className="my-auto lg:block hidden"
+            />
+          </Link>
+          <div className="lg:flex flex-row justify-center gap-x-5 text-primary-100 relative text-xl hidden z-40 lg:pr-20 items-center">
+            <p className="hover:font-bold ">Home</p>
             <div className="relative group z-50">
-              <button className=" text-xl font-poppins text-primary-100">
+              <button className=" text-xl font-poppins text-primary-100 hover:font-bold">
                 <span>Project</span>
               </button>
-              <div className="absolute z-50 hidden bg-grey-200 group-hover:block">
-                <div className="h-full bg-white bg-primary-200 shadow-lg relative z-50">
-                  <div className="flex flex-col gap-y-2 z-50 relative">
+              <div className="absolute z-50 hidden group-hover:block text-start">
+                <div className="h-screen  shadow-lg absolute z-50">
+                  <div className="flex flex-col gap-y-2 z-50 absolute bg-primary-200 text-white py-5 px-3 shadow-lg">
                     <p>Design</p>
                     <p>Description</p>
                     <p>Engineering</p>
@@ -74,65 +76,76 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <div className="relative group">
-              <button className="font-montserrat">
+            <div className="relative group z-50">
+              <button className=" text-xl font-poppins text-primary-100 hover:font-bold">
                 <span>Wet Lab</span>
               </button>
-              <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
-                <div className="px-2 pt-2 pb-4 bg-white bg-gray-200 shadow-lg">
-                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                    <p>Parts</p>
-                    <p>Experiments</p>
-                    <p>Result</p>
-                    <p>Notebook</p>
+              <div className="absolute z-50 hidden group-hover:block text-start">
+                <div className="h-screen  shadow-lg absolute z-50">
+                  <div className="flex flex-col gap-y-2 z-50 absolute bg-primary-200 text-white py-5 px-3 shadow-lg">
+                    <p>Design</p>
+                    <p>Description</p>
+                    <p>Engineering</p>
+                    <p>Safety</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="relative group">
-              <button className="font-montserrat">
+            <div className="relative group z-50">
+              <button className=" text-xl font-poppins text-primary-100 hover:font-bold">
                 <span>Dry Lab</span>
               </button>
-              <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
-                <div className="px-2 pt-2 pb-4 bg-white bg-gray-200 shadow-lg">
-                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                    <p>dropdown content here</p>
+              <div className="absolute z-50 hidden group-hover:block text-start">
+                <div className="h-screen  shadow-lg absolute z-50">
+                  <div className="flex flex-col gap-y-2 z-50 absolute bg-primary-200 text-white py-5 px-3 shadow-lg">
+                    <p>Design</p>
+                    <p>Description</p>
+                    <p>Engineering</p>
+                    <p>Safety</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="relative group">
-              <button className="font-montserrat">
+            <div className="relative group z-50">
+              <button className=" text-xl font-poppins text-primary-100 hover:font-bold">
                 <span>Human Practices</span>
               </button>
-              <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
-                <div className="px-2 pt-2 pb-4 bg-white bg-gray-200 shadow-lg">
-                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                    <p>dropdown content here</p>
+              <div className="absolute z-50 hidden group-hover:block text-start">
+                <div className="h-screen  shadow-lg absolute z-50">
+                  <div className="flex flex-col gap-y-2 z-50 absolute bg-primary-200 text-white py-5 px-3 shadow-lg">
+                    <p>Design</p>
+                    <p>Description</p>
+                    <p>Engineering</p>
+                    <p>Safety</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="relative group">
-              <button className="font-montserrat">
+            <div className="relative group z-50">
+              <button className=" text-xl font-poppins text-primary-100 hover:font-bold">
                 <span>Team</span>
               </button>
-              <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
-                <div className="px-2 pt-2 pb-4 bg-white bg-gray-200 shadow-lg">
-                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                    <p>dropdown content here</p>
+              <div className="absolute z-50 hidden group-hover:block text-start">
+                <div className="h-screen  shadow-lg absolute z-50">
+                  <div className="flex flex-col gap-y-2 z-50 absolute bg-primary-200 text-white py-5 px-3 shadow-lg">
+                    <Link href="/member">
+                      <p>Member</p>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="relative group">
-              <button className="font-montserrat">
+            <div className="relative group z-50">
+              <button className=" text-xl font-poppins text-primary-100 hover:font-bold">
                 <span>Medals</span>
               </button>
-              <div className="absolute z-10 hidden bg-grey-200 group-hover:block">
-                <div className="px-2 pt-2 pb-4 bg-white bg-gray-200 shadow-lg">
-                  <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                    <p>dropdown content here</p>
+              <div className="absolute z-50 hidden group-hover:block text-start">
+                <div className="h-screen  shadow-lg absolute z-50">
+                  <div className="flex flex-col gap-y-2 z-50 absolute bg-primary-200 text-white py-5 px-3 shadow-lg">
+                    <p>Design</p>
+                    <p>Description</p>
+                    <p>Engineering</p>
+                    <p>Safety</p>
                   </div>
                 </div>
               </div>
@@ -182,66 +195,65 @@ const Navbar = () => {
           </svg>
         </div>
       </div>
-      <ProgressBar height="3px" bgColor="#fca311" />
+
       <div
-        className={`flex flex-col justify-center items-start gap-x-5 text-white bg-primary-100 relative text-xl lg:hidden h-screen w-screen gap-y-6 duration-1000 overflow-y-hidden ${
+        className={` fixed flex flex-col justify-start pt-24 items-start gap-x-5 text-white bg-primary-100 text-xl lg:hidden h-screen w-screen gap-y-1 duration-1000 overflow-y-hidden z-50 ${
           active ? "translate-x-[-25%]" : " translate-x-[-200%]"
-        }`}>
-        <button className=" text-xl font-poppins text-white pl-40">
+        } ${visible ? "" : "translate-y-[-200%]"}`}>
+        <button className=" text-xl font-poppins text-white pl-40 pb-5 xs:pl-48 sm:pl-56 md:pl-64">
           <span>Home</span>
         </button>
         <div className="relative group">
-          <button className=" text-xl font-poppins text-white pl-40">
+          <button className=" text-xl font-poppins text-white pl-40 pb-5 xs:pl-48 sm:pl-56 md:pl-64">
             <span>Project</span>
           </button>
           <div className="z-10 hidden group-hover:block w-screen">
             <div className="h-full w-full bg-primary-200 shadow-lg relative z-50">
-              <div className="flex flex-col gap-y-2 z-50 relative pl-40 py-5">
+              <div className="flex flex-col gap-y-2 z-50 relative pl-40 xs:pl-48 sm:pl-56 md:pl-64 py-5">
                 <p>Design</p>
                 <p>Description</p>
                 <p>Engineering</p>
                 <p>Safety</p>
+                <p>Contribution</p>
               </div>
             </div>
           </div>
         </div>
         <div className="relative group">
-          <button className=" text-xl font-poppins text-white pl-40">
+          <button className=" text-xl font-poppins text-white pl-40 pb-5 xs:pl-48 sm:pl-56 md:pl-64">
             <span>Wet Lab</span>
           </button>
           <div className="z-10 hidden group-hover:block w-screen">
             <div className="h-full w-full bg-primary-200 shadow-lg relative z-50">
-              <div className="flex flex-col gap-y-2 z-50 relative pl-40 py-5">
-                <p>Design</p>
-                <p>Description</p>
-                <p>Engineering</p>
-                <p>Safety</p>
+              <div className="flex flex-col gap-y-2 z-50 relative pl-40 xs:pl-48 sm:pl-56 md:pl-64 py-5">
+                <p>Parts</p>
+                <p>Experiments</p>
+                <p>Result</p>
+                <p>Notebook</p>
               </div>
             </div>
           </div>
         </div>
         <div className="relative group">
-          <button className=" text-xl font-poppins text-white pl-40">
+          <button className=" text-xl font-poppins text-white pl-40 pb-5 xs:pl-48 sm:pl-56 md:pl-64">
             <span>Dry Lab</span>
           </button>
           <div className="z-10 hidden group-hover:block w-screen">
             <div className="h-full w-full bg-primary-200 shadow-lg relative z-50">
-              <div className="flex flex-col gap-y-2 z-50 relative pl-40 py-5">
-                <p>Design</p>
-                <p>Description</p>
-                <p>Engineering</p>
-                <p>Safety</p>
+              <div className="flex flex-col gap-y-2 z-50 relative pl-40 xs:pl-48 sm:pl-56 md:pl-64 py-5">
+                <p>Model</p>
+                <p>Bioreactor</p>
               </div>
             </div>
           </div>
         </div>
         <div className="relative group">
-          <button className=" text-xl font-poppins text-white pl-40">
+          <button className=" text-xl font-poppins text-white text-start pl-40 pb-5 xs:pl-48 sm:pl-56 md:pl-64">
             <span>Human Practices</span>
           </button>
           <div className="z-10 hidden group-hover:block w-screen">
             <div className="h-full w-full bg-primary-200 shadow-lg relative z-50">
-              <div className="flex flex-col gap-y-2 z-50 relative pl-40 py-5">
+              <div className="flex flex-col gap-y-2 z-50 relative pl-40 xs:pl-48 sm:pl-56 md:pl-64 py-5">
                 <p>Design</p>
                 <p>Description</p>
                 <p>Engineering</p>
@@ -251,27 +263,26 @@ const Navbar = () => {
           </div>
         </div>
         <div className="relative group">
-          <button className=" text-xl font-poppins text-white pl-40">
+          <button className=" text-xl font-poppins text-white pl-40 pb-5 xs:pl-48 sm:pl-56 md:pl-64">
             <span>Team</span>
           </button>
           <div className="z-10 hidden group-hover:block w-screen">
             <div className="h-full w-full bg-primary-200 shadow-lg relative z-50">
-              <div className="flex flex-col gap-y-2 z-50 relative pl-40 py-5">
-                <p>Design</p>
-                <p>Description</p>
-                <p>Engineering</p>
-                <p>Safety</p>
+              <div className="flex flex-col gap-y-2 z-50 relative pl-40 xs:pl-48 sm:pl-56 md:pl-64 py-5">
+                <Link href="/member">
+                  <p>Member</p>
+                </Link>
               </div>
             </div>
           </div>
         </div>
         <div className="relative group">
-          <button className=" text-xl font-poppins text-white pl-40">
+          <button className=" text-xl font-poppins text-white pl-40 pb-5 xs:pl-48 sm:pl-56 md:pl-64">
             <span>Medals</span>
           </button>
           <div className="z-10 hidden group-hover:block w-screen">
             <div className="h-full w-full bg-primary-200 shadow-lg relative z-50">
-              <div className="flex flex-col gap-y-2 z-50 relative pl-40 py-5">
+              <div className="flex flex-col gap-y-2 z-50 relative pl-40 xs:pl-48 sm:pl-56 md:pl-64 py-5">
                 <p>Design</p>
                 <p>Description</p>
                 <p>Engineering</p>
