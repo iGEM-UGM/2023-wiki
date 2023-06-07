@@ -41,7 +41,7 @@ const Navbar = () => {
     <>
       <div
         style={{ ...navbarStyles, top: visible ? "0" : "-120px" }}
-        className="shadow-black shadow-lg z-50">
+        className="shadow-black shadow-lg z-[100]">
         <div className="flex flex-row relative justify-between px-5 items-center overflow-hidden translate-y-[-50%] top-[50%] z-50 h-screen">
           <Link href="/">
             <Image

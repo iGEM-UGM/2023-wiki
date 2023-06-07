@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ProgressBar from "react-scroll-progress-bar";
@@ -69,14 +68,23 @@ const Member = () => {
           alt=""
           className="relative animate-bounce block mx-auto rotate-180"
           onClick={() => {
-            window.scrollTo({top: 700, behavior: "smooth" });
+            window.scrollTo({ top: 700, behavior: "smooth" });
           }}
         />
       </div>
 
       <div className="h-full w-screen relative bg-primary-200 text-white pt-24 px-12 z-[100]">
-        <p className="font-montserrat font-bold text-6xl">About</p>
-        <p className="font-poppins text-justify py-12 text-2xl">
+        <Image
+          src="/assets/asset4.png"
+          width={100}
+          height={100}
+          alt=" "
+          className="absolute z-0 top-[6%] right-[1%]"
+        />
+        <p className="font-montserrat font-bold text-6xl relative z-10">
+          About
+        </p>
+        <p className="font-poppins text-justify py-12 text-xl relative z-10 lg:text-2xl">
           The UGM iGEM Team of 2023 is the first team from Universitas Gadjah
           Mada who will participate in this iGEM event. This team consists of
           students from several study programs (Biology, Agricultural

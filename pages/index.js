@@ -13,6 +13,7 @@ export default function Home() {
       </Head>
 
       <Navbar />
+      <h1 className='text-6xl underline py-[100px]'>Landing Page</h1>
       <Footer />
     </>
   );

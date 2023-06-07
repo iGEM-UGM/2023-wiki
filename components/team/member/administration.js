@@ -25,6 +25,7 @@ const Administration = () => {
           src="/assets/up.svg"
           width={50}
           height={50}
+          alt=""
           className={`left-4 -rotate-90 top-[50%]  absolute z-40 hidden lg:block hover:cursor-pointer ${
             swiperIndex == 0 ? "opacity-50" : ""
           }`}
@@ -84,7 +85,7 @@ const Administration = () => {
           }}>
           {administration.map(({ nama, jurusan, foto }, i) => {
             return (
-              <div className="h-full w-full relative overflow-hidden bg-white">
+              <div className="h-full w-full relative overflow-hidden bg-white" key={i}>
                 <SwiperSlide className=" h-fit font-poppins text-center text-2xl w-fit">
                   <Image
                     src={foto}
@@ -104,6 +105,7 @@ const Administration = () => {
           src="/assets/up.svg"
           width={50}
           height={50}
+          alt=""
           className={`right-4 rotate-90 top-[50%]  absolute z-40 hidden lg:block hover:cursor-pointer ${
             swiperIndex == 0 ? "opacity-50" : ""
           }`}
