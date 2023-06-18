@@ -26,18 +26,6 @@ const Member = () => {
   //   speed: 200,
   //   targetElement: target.current,
   // });
-  const drylab = [
-    {
-      foto: "/photo_team/sofyan.png",
-      nama: "Sofyan Maulana",
-      jurusan: "Biology 2020",
-    },
-    {
-      foto: "/photo_team/kayla.png",
-      nama: "Kayla Queenazima S.",
-      jurusan: "Biomedical Engineering 2020",
-    },
-  ];
   return (
     <div className="scroll-smooth overflow-hidden">
       <Head>

@@ -45,7 +45,7 @@ const Navbar = () => {
         <div className="flex flex-row relative justify-between px-5 items-center overflow-hidden translate-y-[-50%] top-[50%] z-50 h-screen">
           <Link href="/">
             <Image
-              src="/assets/logo_short.png"
+              src="/logo_short.png"
               width={100}
               height={100}
               alt=""
