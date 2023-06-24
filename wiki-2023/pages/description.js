@@ -52,14 +52,16 @@ const Description = () => {
         </h1>
         <p className="font-poppins text-justify py-12 text-xl relative z-10 lg:text-2xl">
           Cancer remains to be one of{" "}
-          <span className="font-bold underline stroke-primary-200  fill-primary-300 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
-            the greatest spectres
-          </span>{" "}
-          of modern medicine.
+          <span className="font-bold underline">the greatest spectres</span> of
+          modern medicine.
         </p>
         <p className="font-poppins text-justify py-12 text-xl relative z-10 lg:text-2xl">
-          Among its many variants, colorectal cancer (CRC) stands as the second
-          most common type of cancer found in Yogyakarta: reaching 1,593 cases
+          Among its many variants,{" "}
+          <span className="font-bold underline">
+            colorectal cancer (CRC) stands as the second most common
+          </span>{" "}
+          type of cancer found in Yogyakarta:{" "}
+          <span className="font-bold underline">reaching 1,593 cases</span>{" "}
           diagnosed from early 2008 to late 2019, with advanced stages already
           present in most of them. The CRC incidence rate also increased 13.4%
           annually in three of the most-affected districts in Yogyakarta.
