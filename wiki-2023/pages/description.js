@@ -63,8 +63,16 @@ const Description = () => {
           type of cancer found in Yogyakarta:{" "}
           <span className="font-bold underline">reaching 1,593 cases</span>{" "}
           diagnosed from early 2008 to late 2019, with advanced stages already
-          present in most of them. The CRC incidence rate also increased 13.4%
+          present in most of them. The CRC incidence rate also{" "}
+          <span className="font-bold underline">increased 13.4%</span>
           annually in three of the most-affected districts in Yogyakarta.
+        </p>
+        <p className="font-poppins text-justify py-12 text-xl relative z-10 lg:text-2xl">
+          Despite the slow progression of CRC, taking approximately 10-15 years,
+          the majority of CRC patients are{" "}
+          <span className="font-bold underline">
+            diagnosed at advanced stages due to late screenings.
+          </span>
         </p>
       </div>
       <Footer />
