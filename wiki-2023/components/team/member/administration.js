@@ -31,7 +31,7 @@ const Administration = () => {
           }`}
           onClick={() => swiperRef.current?.slidePrev()}
         />
-        <p className="font-montserrat text-6xl text-primary-300  lg:mt-12 lg:ml-12 text-center lg:text-start ">
+        <p className="font-bubblegum text-4xl lg:text-6xl text-primary-300  lg:mt-12 lg:ml-12 text-center lg:text-start ">
           Administration
         </p>
         <Swiper
@@ -85,7 +85,9 @@ const Administration = () => {
           }}>
           {administration.map(({ nama, jurusan, foto }, i) => {
             return (
-              <div className="h-full w-full relative overflow-hidden bg-white" key={i}>
+              <div
+                className="h-full w-full relative overflow-hidden bg-white"
+                key={i}>
                 <SwiperSlide className=" h-fit font-poppins text-center text-2xl w-fit">
                   <Image
                     src={foto}

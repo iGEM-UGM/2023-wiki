@@ -20,9 +20,9 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        montserrat: ["Montserrat", "sans-serif"],
-        open: ["Open Sans", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
+        photograph: ["Photograph Signature"],
+        bubblegum: ["BubbleGum"],
       },
       screens: {
         xs: "500px",

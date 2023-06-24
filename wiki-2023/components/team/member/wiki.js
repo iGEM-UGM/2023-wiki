@@ -31,7 +31,7 @@ const Wiki = () => {
           }`}
           onClick={() => swiperRef.current?.slidePrev()}
         />
-        <p className="font-montserrat text-6xl text-primary-300  lg:mt-12 lg:ml-12 text-center lg:text-start ">
+        <p className="font-bubblegum text-4xl lg:text-6xl text-primary-300  lg:mt-12 lg:ml-12 text-center lg:text-start ">
           Wiki
         </p>
         <Swiper

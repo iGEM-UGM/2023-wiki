@@ -41,11 +41,11 @@ const Navbar = () => {
     <>
       <div
         style={{ ...navbarStyles, top: visible ? "0" : "-120px" }}
-        className="shadow-black shadow-lg z-[100]">
-        <div className="flex flex-row relative justify-between px-5 items-center overflow-hidden translate-y-[-50%] top-[50%] z-50 h-screen">
+        className="shadow-black shadow-lg z-[110]">
+        <div className="flex flex-row relative justify-between px-5 items-center overflow-hidden translate-y-[-50%] top-[50%] z-50 h-screen ">
           <Link href="/">
             <Image
-              src="/logo_short.png"
+              src="/assets/logo_short.png"
               width={100}
               height={100}
               alt=""
@@ -69,7 +69,9 @@ const Navbar = () => {
                 <div className="h-screen  shadow-lg absolute z-50">
                   <div className="flex flex-col gap-y-2 z-50 absolute bg-primary-200 text-white py-5 px-3 shadow-lg">
                     <p>Design</p>
-                    <p>Description</p>
+                    <Link href="/description">
+                      <p>Description</p>
+                    </Link>
                     <p>Engineering</p>
                     <p>Safety</p>
                   </div>
@@ -128,7 +130,7 @@ const Navbar = () => {
               <div className="absolute z-50 hidden group-hover:block text-start">
                 <div className="h-screen  shadow-lg absolute z-50">
                   <div className="flex flex-col gap-y-2 z-50 absolute bg-primary-200 text-white py-5 px-3 shadow-lg">
-                    <Link href="/member">
+                    <Link href="/team">
                       <p>Member</p>
                     </Link>
                   </div>
@@ -197,7 +199,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={` fixed flex flex-col justify-start pt-24 items-start gap-x-5 text-white bg-primary-100 text-xl lg:hidden h-screen w-screen gap-y-1 duration-1000 overflow-y-hidden z-50 ${
+        className={` fixed flex flex-col justify-start pt-24 items-start gap-x-5 text-white bg-primary-100 text-xl lg:hidden h-screen w-screen gap-y-1 duration-1000 overflow-y-hidden z-[110] ${
           active ? "translate-x-[-25%]" : " translate-x-[-200%]"
         } ${visible ? "" : "translate-y-[-200%]"}`}>
         <button className=" text-xl font-poppins text-white pl-40 pb-5 xs:pl-48 sm:pl-56 md:pl-64">
@@ -211,7 +213,9 @@ const Navbar = () => {
             <div className="h-full w-full bg-primary-200 shadow-lg relative z-50">
               <div className="flex flex-col gap-y-2 z-50 relative pl-40 xs:pl-48 sm:pl-56 md:pl-64 py-5">
                 <p>Design</p>
-                <p>Description</p>
+                <Link href="/description">
+                  <p>Description</p>
+                </Link>
                 <p>Engineering</p>
                 <p>Safety</p>
                 <p>Contribution</p>
@@ -269,7 +273,7 @@ const Navbar = () => {
           <div className="z-10 hidden group-hover:block w-screen">
             <div className="h-full w-full bg-primary-200 shadow-lg relative z-50">
               <div className="flex flex-col gap-y-2 z-50 relative pl-40 xs:pl-48 sm:pl-56 md:pl-64 py-5">
-                <Link href="/member">
+                <Link href="/team">
                   <p>Member</p>
                 </Link>
               </div>
